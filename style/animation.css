@@ -1,0 +1,73 @@
+.typing-effect {
+    width: auto; /* Adjust based on your text length */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #34b4cf; /* Cursor effect, using your color */
+    animation: typing 3s steps(22) infinite, blink .75s step-end infinite;
+}
+
+h1::before{
+    content: attr(text-data);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #34b4cf;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    animation: h1TextAnimation 2s infinite;
+}
+
+footer p{
+    font-size: 1.5rem;
+    animation: textAnimation 2s infinite;
+}
+
+
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 17ch;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
+@keyframes h1TextAnimation {
+    0%{
+        width: 0;
+    }
+    25%{
+        width: 25%;
+    }
+    50%{
+        width: 50%;
+    }
+    75%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes textAnimation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

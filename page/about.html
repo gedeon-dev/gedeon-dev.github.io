@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/animation.css">
+    <link rel="stylesheet" href="../style/norme.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Gedeon Mitoumona</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <a href="../index.html" class="nav-bar-link">home</a>
+            <a href="./about.html" class="nav-bar-link active">about</a>
+            <a href="./blog.html" class="nav-bar-link">blog</a>
+        </nav>
+        <span class="base-line typing-effect"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 2L18 12L6 22" stroke="#34b4cf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg> About me!_</span>
+        <!--div class="social-media">
+            <a href="https://www.linkedin.com/in/gedeon-mitoumona-711293224/" target="_blank"><img src="/image/linkedin.png" alt=""></a>
+            <a href="https://github.com/gedeon-dev" target="_blank"><img src="/image/GitHub.png" alt=""></a>
+            <a href="mailto:gedeonmitoumona@gmail.com"><img src="/image/Gmail.png" alt=""></a>
+        </div-->
+    </header>
+    <!--div class="toto">
+        <img src="image/me.jpg" alt="" class="img-profile">
+    </div-->
+    <section class="home-section">
+        <div class="container-small">
+            <div class="content">
+                <h1 text-data="Hello I'm Gedeon," translate="no">Hello I'm Gedeon,</h1>
+                <!--p>I aspire to become a software engineer. I'm passionate about how things are built, I like solving problems, and I'm curious about how AI-assisted coding will change software development.</p>
+                <p>I aspire to become a software engineer. I'm fascinated by understanding how things work, I wanted to learn more about computer Languages and I like solving problems so I started to learn how to code. I'm curious about how AI-assisted coding will change software development.</p-->
+                <p>I am aspiring to become a Software Engineer to develop systems that will change users' daily lives and help young people discover the world of technology and how technology changes things.</p>
+                <button class="download">Download my resume</button>
+            </div>
+        </div>
+        <div class="flex-box">
+            <div class="image-box">
+                <img src="../image/about_me.jpg" alt="">
+            </div>
+            <div class="text-box-container">
+                <div class="text-box-content">
+                    After obtain my High school diploma in mathematics and physics, I would like to become professor at university. When I was applying to the faculty of Science, I discover <strong>networks and telecommunication</strong> specialization then I apply for.
+                    <!--p>Après mon baccalauréat en spécialité mathématiques, je souhaitais m'orienté vers de longues études pour être professeur à l'université. Au moment de faire l'inscription à la fac des sciences, j'ai découvert la spécialité Réseaux et Télécommunication et j'avais ressenti ce désir de m'y inscrire.</p-->
+                </div>
+                <div class="text-box-content">
+                    In the first year of my Bachelor's I took a course on Java and I fell in love with programming. I could think and materialize my thoughts through code then I started to learn programming on my own. In my second Bachelor year, I stopped my studies and I started <strong>Gedeon-Software</strong> a small agency specializing in web development and network installation.
+                    <!--p>En 1ere année de licence, j'ai fait un cours sur Java et j'étais tombé amoureux de la programmation. Je pouvais pensé et matérialiser ma pensée à travers le code. Par la suite, j'ai commencé à apprendre la programmation seul. En fin de 2ème année de licence, j'avais suspendu mes études pour commencé une carrière de freelance. J'avais lancé <strong>Gedeon-Software</strong>, une petite agence spécialisée dans le développement web et installation Réseaux.</p-->
+                </div>
+                <div class="text-box-content">
+                    <!--p>
+                    Après la période Covid, j'ai décidé de reprendre mes études en vu d'obtenir un diplôme d'ingénieurs en informatique. Après un <strong>BTS systems numériques informatique et réseaux</strong>, je me suis inscrit en <strong>licence Sciences Pour l'ingénieurs</strong> en vu d'intégrer une école d'ingénieurs et devenir <strong>Software Engineer</strong>.
+                    </p-->                  
+                    After the COVID, I decided to get an Engineering Degree in Computer Science. First I obtained an<strong>Associate's Degree in computer sciences and networks</strong> and now I'm doing <strong>Bachelor of Engineering sciences</strong> with a view to going in engineering school and becoming a <strong>Software Engineer</strong>.
+                </div>
+            </div>
+       </div> 
+    </section>
+    <footer>
+        <img src="../image/footer-image.png" alt="" class="footer-image">
+        <p>Together, let's build the future</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/gedeon-mitoumona-711293224/" target="_blank"><img src="../image/linkedin.png" alt=""></a>
+            <a href="https://github.com/gedeon-dev" target="_blank"><img src="../image/GitHub.png" alt=""></a>
+            <a href="mailto:gedeonmitoumona@gmail.com"><img src="../image/Gmail.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    document.querySelector('.download').addEventListener('click', function() {
+        const url = 'https://drive.google.com/file/d/1uMekmUCwTErlA8yrnDo9acPiHZZ7enVh/view?usp=sharing';
+        const filename = 'cv_Gedeon_mitoumona';
+    
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+    
+        const clickEvent = new MouseEvent("click", {
+            "view": window,
+            "bubbles": true,
+            "cancelable": false
+        });
+        a.dispatchEvent(clickEvent);
+    });
+    </script>
